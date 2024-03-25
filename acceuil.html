@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logocercle.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>AymenHS - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li  onclick="hideSidebar()"><a href="#" class="logo"><img src="img/X.png" width="24" height="24"></a></li>
+            <li onclick="hideSidebar()"><a href="#apropos">A propos</a></li>
+            <li onclick="hideSidebar()"><a href="#comp">Compétances</a></li>
+            <li onclick="hideSidebar()"><a href="#expe">Experience</a></li>
+            <li onclick="hideSidebar()"><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img src="img/logowhite.png" width="50" height="50"></a></li>
+            <li class="hideOnMobile"><a href="#apropos">A propos</a></li>
+            <li class="hideOnMobile"><a href="#comp">Compétances</a></li>
+            <li class="hideOnMobile"><a href="#expe">Experience</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="img/hamburger.png" width="24" height="24"></a></li>
+        </ul>
+    </nav>
+
+    <div class="banniere">
+        <div class="titres">
+            <h5>Portfolio.</h5>
+            <h1>Aymen Mohammed Hadj Slimane</h1>
+            <h3>Développeur Web</h3>
+            <a href="#apropos" class="btn">QUI-SUIS JE ?</a>
+        </div>
+        <img src="img/logowhite.png" class="myAnim" width="200" height="200">
+    </div>
+
+    <div class="hero_area">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+
+    <div id="apropos">
+        <h1>A PROPOS DE MOI</h1>
+        <div class="desc">
+            <div><img src="img/me.jpg" width="200" height="200"></div>
+            <p>
+                Bonjour! Je suis Aymen, un jeune développeur passionné et créatif, encore aux débuts passionnants de ma carrière. Actuellement en deuxième année d'informatique à l'université de Tlemcen, je suis immergé dans l'univers fascinant de la conception et du développement web.
+                Ce qui me distingue, c'est ma passion pour la simplicité. Je crois fermement que la beauté réside dans la simplicité, et c'est cette philosophie qui guide chacun de mes projets. Du design épuré aux fonctionnalités intuitives, je m'efforce toujours de créer des expériences en ligne qui sont à la fois élégantes et faciles à utiliser. 
+                Bien que je sois encore en train d'apprendre et de grandir, je suis prêt à relever des défis et à apporter ma touche personnelle à chaque projet. Actuellement disponible pour des missions en freelance, je suis enthousiaste à l'idée de collaborer avec vous pour donner vie à vos idées et à vos visions sur le web.
+                Si vous recherchez un développeur qui allie passion, créativité et dévouement à la simplicité, alors ne cherchez pas plus loin. Contactez-moi dès aujourd'hui et ensemble, créons quelque chose d'exceptionnel.
+            </p>
+        </div>
+    </div>
+
+    <div id="comp" class="competances">
+        <h1>MES COMPÉTANCES</h1>
+        <div class="allcomp">
+            <div class="allprog">
+                <h2>Front-end</h2>
+                <h3>HTML</h3>
+                <div class="div-prog">
+                    <div class="progressionhtml">
+                        
+                    </div>
+                </div>
+                <h3>CSS</h3>
+                <div class="div-prog">
+                    <div class="progressioncss">
+                
+                    </div>
+                </div>
+                <h3>JAVASCRIPT</h3>
+                <div class="div-prog">
+                    <div class="progressionjs">
+    
+                    </div>
+                </div>
+            </div>
+            <div class="allprog">
+                <h2>Back-end</h2>
+                <h3>PHP</h3>
+                <div class="div-prog">
+                    <div class="progressionphp">
+                        
+                    </div>
+                </div>
+                <h3>MySQL</h3>
+                <div class="div-prog">
+                    <div class="progressionsql">
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="remarque">
+            <img src="img/attention.png" width="40" height="40">
+            <p>il est important de noter que ces indicateurs ne capturent qu'un instantané dans le temps. En réalité, mes compétences en programmation sont en constante évolution et amélioration !</p>
+        </div>
+    </div>
+
+    <div id="expe" class="experience">
+        <h1>EXPÉRIENCES</h1>
+        <p>Bientot Licencié en université Abu Bakr Belkaid Tlemcen.</p>
+        <p>Pas d'expériences dans le domaine du professionnelle pour le moment.</p>
+    </div>
+
+    <div class="hero_area2">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>CONTACTEZ-MOI</h1>
+        <p>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</p>
+        <form class="formulaire" action="send.php" method="post">
+            <div class="form">
+                <div class="ligne">
+                    <div class="cellule" style="margin-right: 5px;">
+                        <label>Nom*</label>
+                        <input type="text" name="nom">
+                    </div>
+                    <div class="cellule">
+                        <label>Prenom</label>
+                        <input type="text" name="prenom">
+                    </div>
+                </div>
+                <div class="ligne">
+                    <div class="cellule"  style="margin-right: 5px;">
+                        <label>E-Mail*</label>
+                        <input type="email" name="email">
+                    </div>
+                
+                    <div class="cellule">
+                        <label>Téléphone</label>
+                        <input type="tel" name="tel">
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="cellule2">
+                        <label>Objet*</label>
+                        <input type="text" name="subject">
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="cellule2">
+                        <label>Message*</label>
+                        <textarea name="message" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="valider">
+                    <a href="#" name="send">ENVOYER</a>
+                </div>
+            </div>
+            <div class="infos">
+                <div class="mt">
+                    <div class="mail">
+                        <img src="img/mail.png" width="20" height="20">
+                        <a href="mailto:mltaymen@gmail.com">mltaymen@gmail.com</a>
+                    </div>
+                    <div class="phone">
+                        <img src="img/phone.png" width="20" height="20">
+                        <h5>+213 675 92 79 74</h5>
+                    </div>
+                </div>
+                <div class="ift">
+                    <div class="inta">
+                        <a href="https://www.instagram.com/aymen_hadj.slimane/" target="_blank">
+                            <img src="img/insta.png" height="40px" width="40px">
+                        </a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100009553989466" target="_blank">
+                            <img src="img/facebook.png" height="40px" width="40px">
+                        </a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/aymenHS_" target="_blank">
+                            <img src="img/twitter.png" height="40px" width="40px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+        window.addEventListener('scroll', function() {
+            var progressionDivhtml = document.querySelector('.progressionhtml');
+            var progressionDivcss = document.querySelector('.progressioncss');
+            var progressionDivjs = document.querySelector('.progressionjs');
+            var progressionDivphp = document.querySelector('.progressionphp');
+            var progressionDivsql = document.querySelector('.progressionsql');
+            var rect1 = progressionDivhtml.getBoundingClientRect();
+            var rect2 = progressionDivcss.getBoundingClientRect();
+            var rect3 = progressionDivjs.getBoundingClientRect();
+            var rect4 = progressionDivphp.getBoundingClientRect();
+            var rect5 = progressionDivsql.getBoundingClientRect();
+            var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            // Si la partie supérieure de la div devient visible
+            if (rect1.top <= windowHeight) {
+                progressionDivhtml.style.width = '85%';
+            }
+            if (rect2.top <= windowHeight) {
+                progressionDivcss.style.width = '60%';
+            }
+            if (rect3.top <= windowHeight) {
+                progressionDivjs.style.width = '45%';
+            }
+            if (rect4.top <= windowHeight) {
+                progressionDivphp.style.width = '10%';
+            }
+            if (rect5.top <= windowHeight) {
+                progressionDivsql.style.width = '20%';
+            }
+        });
+    </script>
+</body>
+</html>

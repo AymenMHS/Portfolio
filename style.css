@@ -1,0 +1,871 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Segoe UI' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------------NAVBAR----------------------*/
+
+nav{
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #303030;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 2px solid white;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+/* ---------------- BANNIERE -----------*/
+
+.banniere{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    margin-top: 200px;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    z-index: 999;
+}
+
+.banniere img{
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, 2px);
+	}
+
+	80% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.titres{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.titres h1{
+    font-family: 'Nunito',sans-serif;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.titres h3{
+    font-family: 'Nunito',sans-serif;
+}
+
+.titres h5{
+    font-family: 'Nunito',sans-serif;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.btn {
+    margin-top: 50px;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    height: 40px;
+    width: 150px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.btn:hover{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(163, 163, 163) 96%);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.btn:active{
+    width: 140px;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+
+#apropos{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#apropos h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apropos .desc{
+    display: flex;
+    width: 95%;
+    height: 80%;
+}
+
+#apropos .desc div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apropos .desc div img{
+    border-radius: 10px;
+}
+
+#apropos .desc p{
+    width: 70%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.competances{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.competances h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remarque{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.remarque img{
+    position: absolute;
+    transform: rotate(-20deg);
+    z-index: 3;
+}
+
+.remarque p{
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #F39B9C;
+    font-family: 'Nunito', sans-serif;
+}
+
+.allcomp{
+    width: 95%;
+    display: flex;
+}
+
+.allprog{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-prog{
+    width: 80%;
+    height: 10px;
+    display: flex;
+    background-color: #D4D5D5;
+}
+
+.progressionhtml,.progressioncss,.progressionjs,.progressionphp,.progressionsql{
+    width: 0px;
+    height: 100%;
+    background-color: #303131;
+    transition: width 2s ease;
+}
+.allprog h2{
+    text-align: center;
+    margin: 5px;
+}
+.allprog h3{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.experience{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.experience h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.experience p{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    width: 50%;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contact h1{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 50px;
+}
+
+.contact .formulaire{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .formulaire .form{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    height: 30px;
+    padding-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.form label{
+    color: black;
+}
+
+.object{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+}
+
+.ligne{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+}
+
+.cellule2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.cellule{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.contact .formulaire .infos{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mt{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.phone img,.mail img{
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.mail a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.ift{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ift div{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ift div a img:hover{
+    width: 45px;
+    height: 45px;
+    transition: 0.3s ease;
+}
+
+
+
+.valider{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valider a{
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valider a:hover{
+    width: 110px;
+    color: black;
+    transition: 0.3s ease;
+    background-color: white;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+
+
+
+
+.hero_area {
+    position: relative;
+    height: 80vh;
+    background-color: black;
+}
+
+.hero_area2 {
+    transform: rotate(180deg);
+    position: relative;
+    height: 20vh;
+    background-color: black;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+}
+
+
+@media(max-width: 1024px){
+
+    .banniere{
+        flex-direction: column-reverse;
+        border: 1px solid red;
+        margin-bottom: 100px;
+    }
+
+    .banniere .titres h5{
+        font-size: 15px;
+    }
+    .banniere .titres h1{
+        font-size: 25px;
+    }
+    .banniere .titres h3{
+        font-size: 18px;
+    }
+
+    .banniere .titres a{
+        margin-top: 20px;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .banniere img{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    #apropos{
+        height: 600px;
+    }
+
+    #apropos h1{
+        font-size: 25px;
+    }
+
+    #apropos .desc{
+        flex-direction: column;
+    }
+
+    #apropos .desc img{
+        display: none;
+    }
+
+    #apropos .desc p{
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .competances{
+        height: 600px;
+    }
+
+    .competances h1{
+        font-size: 25px;
+    }
+
+    .experience{
+        height: 500px;
+    }
+
+    .experience h1{
+        font-size: 25px;
+    }
+
+    .experience p{
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .contact h1{
+        font-size: 25px;
+    }
+
+    .contact p{
+        font-size: 13px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact .formulaire{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .formulaire .form{
+        width: 100%;
+    }
+
+    .contact .formulaire .form .ligne{
+        flex-direction: column;
+        padding: 0;
+        width: 90%;
+    }
+
+    .contact .formulaire .form .ligne .cellule{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contact .formulaire .form .ligne input{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .formulaire .form .object{
+        width: 90%;
+    }
+
+    .contact .formulaire .infos{
+        width: 100%;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+}
+
+@media(max-width: 430px){
+    .sidebar{
+        width: 100%;
+    }
+
+    .banniere{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
+    .banniere .titres h5{
+        font-size: 10px;
+    }
+    .banniere .titres h1{
+        font-size: 18px;
+    }
+    .banniere .titres h3{
+        font-size: 15px;
+    }
+
+    .banniere .titres a{
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .banniere img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    #apropos{
+        height: 600px;
+    }
+
+    #apropos h1{
+        font-size: 25px;
+    }
+
+    #apropos .desc{
+        flex-direction: column;
+    }
+
+    #apropos .desc img{
+        display: none;
+    }
+
+    #apropos .desc p{
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .competances{
+        height: 600px;
+    }
+
+    .competances h1{
+        font-size: 25px;
+    }
+
+    .experience{
+        height: 500px;
+    }
+
+    .experience h1{
+        font-size: 25px;
+    }
+
+    .experience p{
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .contact{
+        height: auto;
+    }
+
+    .contact h1{
+        font-size: 25px;
+    }
+
+    .contact p{
+        font-size: 13px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .contact .formulaire{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .formulaire .form{
+        width: 100%;
+    }
+
+    .contact .formulaire .form .ligne{
+        flex-direction: column;
+        padding: 0;
+        width: 90%;
+    }
+
+    .contact .formulaire .form .ligne .cellule{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contact .formulaire .form .ligne input{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .formulaire .form .object{
+        width: 90%;
+    }
+
+    .contact .formulaire .infos{
+        width: 100%;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+}
