@@ -17,7 +17,7 @@ if(isset($_POST["send"])){
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
-    $mail->setForm('mltaymen@gmail.com');
+    $mail->setFrom('mltaymen@gmail.com');
 
     $mail->addAddress($_POST["email"]);
 
